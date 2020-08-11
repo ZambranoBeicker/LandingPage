@@ -1,6 +1,8 @@
 import React from "react"
-import { AppBar, Typography, Link, Box, Container} from "@material-ui/core"
+import { IconButton, AppBar, Typography, Link, Box, Container} from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
+import  MenuIcon from "@material-ui/icons/Menu"
+
 
 const Header = () =>{
 
@@ -15,9 +17,15 @@ const useHeaderStyles = makeStyles({
 	  
 	},
 	linksContainer:{
-	  [theme.breakpoints.down("md")]:{
+	  [theme.breakpoints.down("sm")]:{
 	    display: "none",
 	  }
+	},
+        menuIcon:{
+	  [theme.breakpoints.up("md")]:{
+	    display: "none",
+	  },
+	  padding: "0 1rem"
 	},
 	links: {
 	  margin: "0 .75rem 0 .75rem",
@@ -48,7 +56,10 @@ const useHeaderStyles = makeStyles({
         <Typography className={classes.typo}><Link href="#this" className={classes.links} color="inherit">Home</Link></Typography>  
         <Typography className={classes.typo}><Link href="#this" className={classes.links} color="inherit">Nosotros</Link></Typography>  
         <Typography className={classes.typo}><Link href="#this" className={classes.links} color="inherit">Servicios</Link></Typography>  
-      </Box> 
+      </Box>
+      <IconButton className={classes.menuIcon} edge="start" color="black" aria-label="menu">
+        <MenuIcon />
+      </IconButton>
      </Container>  
     </AppBar>
   )
