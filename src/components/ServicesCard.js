@@ -1,6 +1,6 @@
 import React from "react"
 import { CardMedia, Card, CardContent, Box, Typography } from "@material-ui/core"
-import { withStyles, makeStyles, useTheme} from '@material-ui/styles';
+import { withStyles, makeStyles, useTheme} from '@material-ui/core/styles';
 
 
 const styles = {
@@ -42,18 +42,43 @@ const ServicesCard = ({classes, title, para, src}) =>{
 	  backgroundColor:"black"
 	},
 	cardTitle:{
-	  fontSize:"1.5rem",
+	  fontSize:"1.25rem",
 	  marginBottom: "1rem", 
+	  [theme.breakpoints.up("sm")]:{
+	    fontSize:"1.75rem",
+	    
+	  },
+          [theme.breakpoints.up("md")]:{
+	    fontSize:"2.25rem",
+	    
+	  },
+	   [theme.breakpoints.up("lg")]:{
+	    fontSize:"2.5rem",
+	    
+	  },
 	},
  	cardParagraph:{
-	  fontSize:".875rem"
+	  fontSize:".875rem",
+	  [theme.breakpoints.up("sm")]:{
+	    fontSize:"1rem",
+	    
+	  }, 
+	  [theme.breakpoints.up("md")]:{
+	    fontSize:"1.25rem",
+	    
+	  }, 
+	  [theme.breakpoints.up("lg")]:{
+	    fontSize:"1.285rem",
+	    
+	  }, 
 	}, 
+    	 
   })
 
   const primaryClasses = useStyles()
   
   return(
-    <Box maxWidth={386} mx="auto" py="1.25rem" mt="2rem">
+    <Box maxWidth={386} mx="auto" py="1.25rem" mt="1rem">
       <Card className={primaryClasses.card + " " + classes.contentHover}>
         <CardMedia classes={{root:primaryClasses.cardMedia, hoverClass:classes.contentHover}} component="img" src={src}/> 	
 	<CardContent  className={primaryClasses.cardContent}>
