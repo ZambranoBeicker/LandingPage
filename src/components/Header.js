@@ -54,8 +54,9 @@ const useHeaderStyles = makeStyles({
       </Box> 	
       <Box display="flex" className={classes.linksContainer}>
         <Typography className={classes.typo}><Link href="#this" className={classes.links} color="inherit">Home</Link></Typography>  
-        <Typography className={classes.typo}><Link href="#this" className={classes.links} color="inherit">Nosotros</Link></Typography>  
         <Typography className={classes.typo}><Link href="#this" className={classes.links} color="inherit">Servicios</Link></Typography>  
+        <Typography className={classes.typo}><Link href="#this" className={classes.links} color="inherit">Proyectos</Link></Typography>  
+        <Typography className={classes.typo}><Link href="#this" className={classes.links} color="inherit">Contacto</Link></Typography>  
       </Box>
       <IconButton className={classes.menuIcon} edge="start" color="black" aria-label="menu">
         <MenuIcon />
