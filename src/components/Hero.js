@@ -1,8 +1,17 @@
 import React from "react"
 import { Box, Typography, Button } from "@material-ui/core"
-import { makeStyles, useTheme } from "@material-ui/core/styles"
+import { makeStyles, useTheme, withStyles } from "@material-ui/core/styles"
 
-const Hero = () =>{
+
+const styles = {
+  newButton:{
+  "&:hover":{                                                                       
+    background:"#2D407C",
+    transition:".2s",
+  }
+}}
+
+const Hero = ({classes}) =>{
   const theme = useTheme()
 
   const useStyles = makeStyles({
@@ -30,9 +39,11 @@ const Hero = () =>{
 	}, 
 	button: {
 	  fontSize: 14,
-	  marginTop: "2rem"
-	  
-	},	
+	  marginTop: "2rem",
+	  transition:".2s",
+	  background:"#3E58AC",
+          color:"white",
+	},
 	heroContainer: {
 	  textAlign: "center",
 	  [theme.breakpoints.up("sm")]:{
@@ -47,17 +58,17 @@ const Hero = () =>{
 	}	  
   })
 
-  const classes = useStyles()
+  const classesHero = useStyles()
 
   return(
-    <Box mx="auto" mt="12rem" className={classes.heroContainer}>
-      <Typography className={classes.title} variant="h1">Crea el futuro de la tecnología con nosotros</Typography> 
-      <Typography className={classes.paragraph}>Hacemos que tu negocio crezca con nuestros servicios digitales y así destacar su verdadero valor</Typography> 
-      <Button className={classes.button} variant="contained">CONTACTANOS</Button> 
+    <Box mx="auto" mt="12rem" className={classesHero.heroContainer}>
+      <Typography className={classesHero.title} variant="h1">Crea el futuro de la tecnología con nosotros</Typography> 
+      <Typography className={classesHero.paragraph}>Hacemos que tu negocio crezca con nuestros servicios digitales y así destacar su verdadero valor</Typography> 
+      <Button className={classesHero.button + " " + classes.newButton} variant="contained">CONTACTANOS</Button> 
     </Box>
   )
 
 }
 
-export default Hero
+export default withStyles(styles)(Hero)
 	
