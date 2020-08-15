@@ -2,20 +2,22 @@ import React from "react"
 import { Card, CardMedia, Box, Typography, Button } from "@material-ui/core"
 import { withStyles } from "@material-ui/core/styles"
 
+
+
 const styles = {
       button:{
 	transition:".2s",
-	background:"#2D407C",
+	background:"#3E58AC",
 	color:"white",
 	marginTop:"1.5rem",
 	"&:hover":{
-	  background:"#2D409f",
+	  background:"#2D407C",
 	  transition:".2s",
 	
 	}
       },
       typo:{
-        fontSize: "2.25rem",
+        fontSize: "1.5rem",
 	color:"white",
       },
       hoverElement:{
@@ -34,7 +36,7 @@ const styles = {
 const ProjectCard = ({classes}) =>{
 
   return (
-   <Box maxWidth={386} position="relative" bgcolor="#1dcff"> 
+   <Box mx="auto" mt="1rem" maxWidth={386} position="relative" bgcolor="#1dcff"> 
     <Card>
       <CardMedia component="img" src="./proyecto.png" />
       <Box position="absolute" width="100%" bottom={0} top={0} bgcolor="transparent" className={classes.hoverElement}>

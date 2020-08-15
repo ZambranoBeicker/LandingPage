@@ -4,7 +4,7 @@ import Header from "../components/Header.js"
 import Hero from "../components/Hero.js" 
 import Services from "../components/Services.js" 
 import Footer from "../components/Footer.js" 
-import ProjectCard from "../components/ProjectCard.js" 
+import Projects from "../components/Projects.js" 
 
 const Home = () =>{
   return(
@@ -13,7 +13,7 @@ const Home = () =>{
        <Header />
        <Hero />	
        <Services /> 
-       <ProjectCard />
+       <Projects />
      </Container> 
        <Footer />
     </>
