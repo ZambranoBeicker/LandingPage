@@ -21,7 +21,7 @@ const Projects = ({classes}) =>{
       <Box textAlign="center">
         <Typography variant="h2">Proyectos</Typography>
       </Box>
-      <Box display="flex" flexWrap="wrap">
+      <Box display="flex" mt="2rem" flexWrap="wrap">
         <ProjectCard />  
         <ProjectCard />  
         <ProjectCard />  
