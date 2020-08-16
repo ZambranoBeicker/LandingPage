@@ -38,7 +38,7 @@ const Services = () =>{
       <Box width="100%" className={classes.container}>
         <ServicesCard title="Desarrollo Web" para="Nos encargamos de crear sitios web y aplicacionos de alto nivel para tu negocio" src="./desktop-solid.svg"/>
         <ServicesCard title="Diseño UI/UX" para="Creamos la interface adecuada para que tu negocio despegue y tenga éxito en su campo" src="./desktop-solid.svg"/>
-        <ServicesCard title="Desarrollo Móvil" para="Usamos las tecnologías más recientes para ofrecer las mejores aplicaciones móviles para tu negocio" src="./desktop-solid.svg"/>
+        <ServicesCard title="Desarrollo Móvil" para="Usamos las tecnologías más recientes para ofrecer las mejores apps móviles para tu negocio" src="./desktop-solid.svg"/>
       </Box> 
     </Box>
   )
