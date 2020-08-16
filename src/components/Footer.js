@@ -23,7 +23,7 @@ const Footer = () => {
 
 
    return(
-     <Box mt="2rem" bgcolor="#101d45" py="2rem">
+     <Box mt="8rem" bgcolor="#101d45" py="2rem">
        <Container>
          <Box mx="auto" maxWidth={330} justifyContent="center" display="flex" flexWrap="wrap" >
            <Box mx=".5rem">
